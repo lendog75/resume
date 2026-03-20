@@ -63,7 +63,7 @@ export function About() {
             <div className="absolute inset-0 border-2 border-[var(--color-accent)] rounded-[var(--radius-card)] translate-x-3 translate-y-3" />
             <div className="relative w-full h-full rounded-[var(--radius-card)] overflow-hidden bg-[var(--color-bg-card)]">
               <Image
-                src="/images/3.jpg"
+                src={personal.profileImage}
                 alt={personal.name}
                 fill
                 sizes="(max-width: 768px) 224px, 288px"

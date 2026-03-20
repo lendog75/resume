@@ -35,5 +35,6 @@
     "skillBarDuration": "1.2s",
     "entranceDuration": "0.6s",
     "entranceDelay": "0.1s"
-  }
+  },
+  "version": 3
 }
