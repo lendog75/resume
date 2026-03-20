@@ -1,0 +1,110 @@
+
+
+
+create me a new resume app using brittanychiang.com for and example.
+
+* it is important that the visual look as close as possible to brittanychiang.com
+* it should use nextjs and tailwindcss
+* it should have a sample of the data model as json for me to fill out.  colors also should be configurable
+* is should support a json file or a github url to a json file
+
+please include a very well written README.md file since I am a very senior react dev but never did next.js
+
+
+
+Create a new resume/portfolio web app based on Brittany Chiang as a visual reference.  It needs to be in this folder not a new sub folder
+
+Requirements:
+
+Tech Stack:
+
+Next.js (latest version, using App Router)
+
+TailwindCSS for styling
+
+TypeScript preferred but optional
+
+Design / Layout:
+
+Match the visual style of BrittanyChiang.com as closely as possible: dark/light mode, accent animations, smooth scrolling, and minimalistic modern look
+
+Responsive for mobile, tablet, and desktop
+
+Include hover/focus animations where appropriate (like link underlines, social icons, skill progress bars, etc.)
+
+Data Model:
+
+All content (name, bio, projects, skills, social links, work experience, education, contact info) should be driven from a JSON file
+
+Provide a sample JSON file (data.json) with realistic placeholders for each field
+
+The app should support loading the JSON either from a local file or a GitHub URL
+
+Theming / Colors:
+
+Primary, secondary, accent colors, and text colors should be configurable via the JSON or a separate theme.json
+
+Default colors should resemble BrittanyChiang.com (dark background, bright accent, light text)
+
+Components / Pages:
+
+Header with navigation links
+
+Hero section with name, tagline, and call-to-action buttons
+
+About section
+
+Projects section with images, titles, descriptions, links, and optional GitHub/Live Demo buttons
+
+Skills section with categories and skill levels
+
+Work experience & education
+
+Contact section with a form (submission can be placeholder)
+
+Footer with social links
+
+Bonus / Nice-to-have:
+
+Smooth scrolling to sections
+
+Mobile navigation drawer or hamburger menu
+
+Animated skill bars or tech icons
+
+Optional dark/light mode toggle
+
+README.md:
+
+Include detailed instructions for a senior React dev who is new to Next.js
+
+Sections to include: Project Overview, Installation, Running Locally, Folder Structure, Data Configuration, Color/Theming, Deployment (Vercel recommended), Customization Tips
+
+Provide example commands for dev and prod environments
+
+Explain how to swap JSON data from local or GitHub URL
+
+Deliverables:
+
+Fully working Next.js + TailwindCSS app
+
+Sample data.json
+
+Optional theme.json
+
+README.md
+
+Minimal placeholder images/icons if needed
+
+Output Format:
+
+Return all code in a format ready to copy into a Next.js project folder structure.
+
+Include comments explaining where to customize components or JSON-driven data.
+
+End Goal:
+A highly configurable, JSON-driven resume app that looks visually almost identical to BrittanyChiang.com, ready for deployment, with a thorough README for a senior React developer new to Next.js.
+
+If you want, I can take this prompt and generate the full Next.js project structure with sample JSON and README.md for you right now, so you can immediately start working with it.
+
+Do you want me to do that?

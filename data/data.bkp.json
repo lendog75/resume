@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "siteTitle": "Lenny Reed | Software Engineer",
+    "description": "Family man, outdoorsman, and software developer who loves to work with React. Responsive Design and RESTful APIs are personal favorites.",
+    "url": "https://lennyreed.com",
+    "resumePdf": "/resume.pdf"
+  },
+  "personal": {
+    "name": "Lenny Reed",
+    "tagline": "I build things for the web.",
+    "subTagline": "Family man, outdoorsman, and software developer who loves to work with React. In everything I do I am a \"maker\" — whether it is building a web application or building a table, it's just what I do!",
+    "location": "Colorado Springs, CO",
+    "email": "UNKNOWN",
+    "availableForWork": true,
+    "profileImage": "/images/3.jpg",
+    "bio": [
+      "Family man, outdoorsman, and software developer who loves to work with React. Responsive Design and RESTful APIs are also personal favorites.",
+      "In everything I do I am a \"maker\". Whether it is building a web application or building a table, it's just what I do!",
+      "Outside of work I enjoy woodworking, Corvettes, NFL and College Football, and getting out into the Colorado backcountry."
+    ],
+    "social": {
+      "github": "UNKNOWN",
+      "linkedin": "https://linkedin.com/in/lenny-reed",
+      "twitter": "UNKNOWN"
+    }
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "about": {
+    "headline": "About Me",
+    "body": [
+      "Family man, outdoorsman, and software developer who loves to work with React. Responsive Design and RESTful APIs are also personal favorites.",
+      "In everything I do I am a \"maker\" — whether it is building a web application or building a table, it's just what I do!",
+      "Here are a few technologies I've been working with recently:"
+    ],
+    "quickFacts": [
+      { "label": "Location", "value": "Colorado Springs, CO" },
+      { "label": "Experience", "value": "23+ Years" },
+      { "label": "Focus", "value": "UI / Frontend Engineering" },
+      { "label": "Available", "value": "Open to opportunities" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Elite Athlete Health Insurance (EAHI)",
+      "description": "Built for the US Olympic Committee via Aspenware. Allows admins to select athletes to be offered and approved for Health Insurance. Each sport has different criteria and number of eligible athletes. Features include eligibility management, copy forward, waitlist, search and creation.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "Games Registration / Athlete Profile",
+      "description": "Built for the US Olympic Committee via Aspenware. Architected a user profile and Games Registration system allowing administrators to control which questions athletes are shown based on the event. Angular-based with module groups, service-based configuration, and a standalone user profile independent of any event.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-3",
+      "title": "Direct Athlete Support (DAS) & Operation Gold",
+      "description": "Built for the US Olympic Committee via Aspenware. Allows administrators to create new pay periods and payments for athletes. Includes rolled up totals, eligibility management, copy forward, athlete lookup and creation.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Automapper", "TFS"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-4",
+      "title": "Find A Club",
+      "description": "Built for the US Olympic Committee via Aspenware. A Sitecore-based system allowing National Governing Bodies to include a \"Find A Club\" module in their sports content, helping individuals find clubs for their chosen sport anywhere in the country. Features an interactive map of the United States.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Sitecore", "Bootstrap 3", "HTML5", ".Net", "WebApi 2"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "skills": [
+          { "name": "React", "level": 97 },
+          { "name": "Angular", "level": 93 },
+          { "name": "TypeScript / JavaScript", "level": 93 },
+          { "name": "HTML5 / CSS / SCSS", "level": 92 },
+          { "name":  "Material MUI", "level": 92 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          { "name": "Node.js / Express / NestJS", "level": 80 },
+          { "name": ".Net / C# / WebApi 2", "level": 82 },
+          { "name": "RESTful APIs", "level": 95 },
+          { "name": "JWT / Auth", "level": 85 }
+        ]
+      },
+      {
+        "name": "DevOps & Tools",
+        "skills": [
+          { "name": "Docker / Jenkins", "level": 80 },
+          { "name": "Firebase", "level": 75 },
+          { "name": "Git", "level": 92 },
+          { "name": "Figma (as a dev)", "level": 80 }
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-1",
+      "type": "work",
+      "company": "BurstIQ",
+      "role": "Team Lead / Principal UI Dev",
+      "period": "Oct 2019 — Jul 2023",
+      "location": "Denver, CO (Hybrid)",
+      "description": "Led a team of developers building intuitive and visually appealing Blockchain-based apps. Principal developer on the company's most critical projects.",
+      "bullets": [
+        "Led a team of developers in creating intuitive and visually appealing Blockchain-based apps",
+        "Migrated company from Angular-based front ends to React",
+        "Oversaw in-person, remote, and off-shore team members",
+        "Mentored junior devs helping them grow their careers and become trusted productive team members",
+        "Developed React-based Admin UI for the company's Blockchain platform, including creation of new chains, user management, and visualization",
+        "Created Angular and React prototypes to demonstrate design concepts and gather user feedback",
+        "Implemented responsive design practices to ensure optimal user experience across all devices"
+      ],
+      "tech": ["React", "Angular", "TypeScript", "JWT", "Figma", "Blockchain"]
+    },
+    {
+      "id": "exp-2",
+      "type": "work",
+      "company": "Transamerica",
+      "role": "Manager Software Engineering",
+      "period": "Jul 2018 — Oct 2019",
+      "location": "Denver, CO (Hybrid)",
+      "description": "Team Lead and Principal Developer for Advisor Experience, the company's new portal for financial advisors to manage their book of business.",
+      "bullets": [
+        "Supervised 5 direct reports across 3 different functional teams to ensure on-time delivery",
+        "Developed advanced Amazon-style facet filtering feature used throughout the app",
+        "Created edge API using Node.js, Express, and NestJS",
+        "Integrated JWT-based authentication with ISAM",
+        "Implemented Redux pattern using NGRX",
+        "Designed and developed Docker-based Jenkins CI/CD prototype with pipeline build, lint, test, and deploy to AWS S3"
+      ],
+      "tech": ["Angular", "Node.js", "NestJS", "Express", "JWT", "NGRX", "Docker", "Jenkins", "AWS S3"]
+    },
+    {
+      "id": "exp-3",
+      "type": "work",
+      "company": "Pinnacol Assurance",
+      "role": "Software Developer III / UI Team Lead",
+      "period": "Feb 2017 — Jun 2018",
+      "location": "Denver, CO (Hybrid)",
+      "description": "Architected and served as Principal Developer for the new internal Angular component library and design system.",
+      "bullets": [
+        "Architected and led development of internal Angular component library (pn-library) and SCSS design system (pn-themes based on Foundation 6.x)",
+        "Created new build and deployment process using Jenkins, Artifactory, and Docker — reducing deployments from hours to seconds",
+        "Took over as Principal UI Dev for the behind-schedule Certificates of Insurance project (Angular 2)",
+        "Led Customer Onboarding project to completion ahead of schedule (Angular 4)",
+        "Prototyped and presented Progressive Web App (PWA) implementation using Angular 5 Service Worker",
+        "Reduced tech debt by archiving 15+ Git repos and removing 40+ legacy builds"
+      ],
+      "tech": ["Angular", "ES2017", "Foundation 6.x", "SCSS", "Jenkins", "Artifactory", "Docker", "Git"]
+    },
+    {
+      "id": "exp-4",
+      "type": "work",
+      "company": "Aspenware — US Olympic Committee",
+      "role": "Contractor",
+      "period": "Nov 2016 — Feb 2017",
+      "location": "Colorado Springs, CO (Hybrid)",
+      "description": "Contracted to split the existing AngularJS athlete portal away from the TeamUSA platform, removing dependencies on Sitecore and other TeamUSA components.",
+      "bullets": [
+        "Split existing AngularJS athlete portal away from TeamUSA platform, removing Sitecore dependencies",
+        "Created a new WebApi 2 API using the repository pattern",
+        "Built new Angular app using MVC shell, Angular 1.3, and Bootstrap 3"
+      ],
+      "tech": ["JavaScript", "Angular", "LESS", "HTML5", ".Net", "WebApi 2", "TFS", "Sitecore"]
+    },
+    {
+      "id": "exp-5",
+      "type": "work",
+      "company": "Aspenware — US Olympic Committee",
+      "role": "Sr. Consultant",
+      "period": "Feb 2015 — Jun 2016",
+      "location": "Denver, CO",
+      "description": "Worked on multiple projects for the US Olympic Committee including athlete management, payment, registration, and insurance systems.",
+      "bullets": [
+        "Architected Games Registration/Profile system allowing administrators to control questions shown to athletes per event",
+        "Designed and developed Direct Athlete Support (DAS) and Operation Gold payment management systems",
+        "Built Elite Athlete Health Insurance (EAHI) system with sport-specific eligibility criteria and waitlist",
+        "Developed Find A Club system with interactive US map allowing users to find sports clubs nationwide",
+        "Developed Long List feature for managing delegate/athlete nominations for events and games",
+        "Built drink-mixing robot using Arduino, Node.js, and Johnny-Five Robotics for an Aspenware IoT event"
+      ],
+      "tech": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS", "Automapper"]
+    },
+    {
+      "id": "exp-6",
+      "type": "work",
+      "company": "Aspenware — Inspirato",
+      "role": "Contractor / Sr. Web Developer",
+      "period": "Oct 2014 — Jan 2015",
+      "location": "Denver, CO",
+      "description": "Contracted to develop new mobile features for Inspirato's web application.",
+      "bullets": [
+        "Developed mobile version of Inspirato's \"Jaunt Now\" feature with filtering, sorting, custom calendar, and swipe gesture support",
+        "Developed mobile version of Inspirato's \"Jaunt 52\" feature with filtering, sorting, and custom calendar",
+        "Fixed numerous bugs across the existing mobile web application"
+      ],
+      "tech": ["HTML5", "CSS3", "SASS", "jQuery", "MVC4", ".Net 4.5", "Visual Studio 2013", "Subversion", "Jira"]
+    },
+    {
+      "id": "exp-7",
+      "type": "work",
+      "company": "Toolwatch (now Align Technologies)",
+      "role": "Sr. Software Engineer",
+      "period": "Mar 2013 — Oct 2014",
+      "location": "Denver, CO",
+      "description": "Developed a new Angular app (Shinobi) to replace the legacy Winforms application. The app became the development group's highest priority due to its success.",
+      "bullets": [
+        "Developed Shinobi, a new Angular + Bootstrap app to replace a legacy Winforms application — became the team's highest priority project",
+        "Created Amazon-style search with gutter/facets, pagination, and sorting",
+        "Developed 4 RESTful APIs conforming to Level 3 of the Richardson Maturity Model using WebApi 2",
+        "Built supporting business layer using LINQ, lambdas, ORMLite, facade and repository patterns",
+        "Mentored team members helping them become Angular developers"
+      ],
+      "tech": ["Angular", "Bootstrap", "JavaScript", "WebApi 2", "C#", "LINQ", "ORMLite"]
+    },
+    {
+      "id": "exp-8",
+      "type": "work",
+      "company": "Graebel Companies",
+      "role": "Sr. Software Developer",
+      "period": "Dec 2010 — Feb 2013",
+      "location": "Denver, CO",
+      "description": "Played a key role in re-developing a major brownfield application tracking movement of goods globally, then joined the greenfield enterprise team building APIs and an enterprise portal.",
+      "bullets": [
+        "Developed new portal site based on RESTful services using MVC3, jQuery UI, jQuery, Twitter Bootstrap, and .Net 4",
+        "Developed enterprise API exposing RESTful services to portal and other consumers across the organization",
+        "Architected new business layer pulling logic from scattered code-behinds into a clean object model",
+        "Served as Scrum Master, running standups, tracking velocity, and managing sprint planning",
+        "Mentored numerous team members and conducted code reviews",
+        "Worked with EF4, lambda expressions, domain-driven design, messaging, and an enterprise service bus"
+      ],
+      "tech": ["MVC3", "jQuery", "Bootstrap", "WebApi", ".Net 4", "EF4", "REST", "C#"]
+    },
+    {
+      "id": "exp-9",
+      "type": "work",
+      "company": "University of Central Florida",
+      "role": "Research Faculty / Project Lead / Sr. Developer",
+      "period": "Feb 2004 — Nov 2010",
+      "location": "Orlando, FL",
+      "description": "Started as a ColdFusion developer, became project manager overseeing multi-million dollar projects for the university and DoD, then migrated the team to ASP.Net and C#.",
+      "bullets": [
+        "Lead developer for 3 large-scale DoD Web 2.0 projects built on ASP.Net 3.5, LINQ to SQL, and Single Sign-On with Smart Card Authentication",
+        "Held DoD Secret Security Clearance (NACLC) — September 2009",
+        "Developed composite controls enhancing .Net WebControls with security, AJAX, validation, and XML configuration",
+        "Introduced FxCop and developed departmental programming standards based on Microsoft recommendations",
+        "Migrated team from ColdFusion to ASP.Net and C#",
+        "Key developer on over 15 projects"
+      ],
+      "tech": ["ASP.Net 3.5", "C#", "LINQ", "WCF", "AJAX", "ColdFusion", "SQL Server"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "University of Central Florida",
+      "degree": "B.S., Management Information Systems",
+      "period": "1997 — 1999",
+      "gpa": "UNKNOWN",
+      "highlights": [
+        "Brother in Alpha Kappa Psi Professional Business Fraternity"
+      ]
+    }
+  ],
+  "interests": [
+    "Woodworking: I have been a woodworker my whole adult life. I really like making stuff and am very handy. I have made tables, signs, cutting boards, pens and much more.",
+    "Corvettes: Since I was a little boy, I have always loved Corvettes. I have actually owned 3 so far and am just starting to look for my next one.",
+    "I am a huge fan of NFL and College Football.",
+    "I also enjoy getting out into the Colorado backcountry, mostly hiking."
+  ],
+  "quotes": [
+    {
+      "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+      "author": "Martin Fowler"
+    },
+    {
+      "text": "Teaching peers is one of the best ways to develop mastery.",
+      "author": "Jeff Atwood, Stackoverflow"
+    },
+    {
+      "text": "The trick isn't adding stuff, it is taking it away.",
+      "author": "Mark Zuckerberg, Facebook"
+    }
+  ],
+  "contact": {
+    "headline": "Get In Touch",
+    "subtext": "I'm currently open to new opportunities. Whether you have a question, a project in mind, or just want to say hi — my inbox is always open!",
+    "ctaLabel": "Say Hello"
+  }
+}

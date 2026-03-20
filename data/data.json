@@ -1,0 +1,419 @@
+{
+  "config": {
+    "hideExpDescriptions": true,
+    "hideExpBullets": true,
+    "hideImpact": false
+  },
+  "meta": {
+    "siteTitle": "Lenny Reed | Software Engineer",
+    "description": "Family man, outdoorsman, and software developer who loves to work with React. Responsive Design and RESTful APIs are personal favorites.",
+    "url": "https://lennyreed.com",
+    "resumePdf": "",
+    "resumeWord": "Lenny Reed Resume.docx"
+  },
+  "personal": {
+    "name": "Lenny Reed",
+    "tagline": "I build things for the web.",
+    "subTagline": "Full-stack problem solver | Maker of apps and experiences that scale",
+    "location": "Colorado Springs, CO",
+    "email": "lennyreed6@gmail.com",
+    "availableForWork": true,
+    "profileImage": "/images/4.jpg",
+    "bio": [
+      "Family man, outdoorsman, and software developer who loves to work with React. Responsive Design and RESTful APIs are also personal favorites.",
+      "In everything I do I am a \"maker\". Whether it is building a web application or building a table, it's just what I do!",
+      "Outside of work I enjoy woodworking, Corvettes, NFL and College Football, and getting out into the Colorado backcountry."
+    ],
+    "social": {
+      "github": "https://github.com/lendog75",
+      "linkedin": "https://linkedin.com/in/lenny-reed",
+      "twitter": "UNKNOWN"
+    }
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "about": {
+    "headline": "About Me",
+    "body": [
+      "Senior React developer and full-stack problem solver with a passion for building high-quality, user-friendly web applications."," I’m a “maker” at heart — whether it’s architecting a scalable app, optimizing workflows, or crafting hands-on projects, I thrive on turning ideas into reality.","Known for clean, maintainable code, attention to detail, and delivering products that delight users, I bring creativity, technical skill, and a practical mindset to every project."
+    ],
+    "quickFacts": [
+      { "label": "Location", "value": "Colorado Springs, CO" },
+      { "label": "Focus", "value": "UI / Frontend Engineering" },
+      { "label": "Available", "value": "Open to opportunities" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "biq-admin-v3",
+      "title": "BIQ Platform Admin Tool v3",
+      "company": "BurstIQ",
+      "year": "2025",
+      "description": "Rebuilt the BIQ Admin Tool as Aegis UI with React and Material UI, creating a modern, intuitive interface that mirrored the previous version while running on a new server architecture. Leveraged AI-assisted development to exponentially accelerate UI creation while maintaining coding standards and a consistent style. Simplified workflows and the ownership model to help new users onboard faster, while preserving core blockchain management features including chain configuration, consent management, and node visualization.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Material UI", "AI-assisted Development", "Blockchain", "UX", "Admin Tool"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "godzilla-ui",
+      "title": "BIQ Platform Admin Tool v2",
+      "company": "BurstIQ",
+      "year": "2022",
+      "description": "Architected and developed a React and Material UI admin platform for BurstIQ’s blockchain ecosystem, enabling administrators to precisely configure, monitor, and explore complex blockchain graphs. Designed a robust dictionary editor for defining chains with nested attribute trees, indexes, and metadata, alongside comprehensive tools for managing consent contracts, CC receipts, jobs, user groups, and platform settings. Implemented an interactive graph visualization module using a graph API and Tiny Query Language (TQL), providing real-time insights into blockchain relationships and accelerating data-driven decision-making.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Material UI", "TypeScript", "Figma"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "LifeTrek",
+      "title": "Next-Gen Student-Centered Data Ecosystem",
+      "company": "BurstIQ/Maryville Univ",
+      "year": "2023",
+      "description": "Directed development of Maryville University's LifeTrek platform, a next-generation student-centered data ecosystem for nursing programs. Built scalable knowledge graphs to unify administrative and student data, ensuring consistency, lineage tracking, and auditable data history. Designed personalized learner pathways that empower students to manage their skills, achievements, and learning journeys, leveraging generative AI for immersive, interactive experiences. Delivered automation for data governance, transformation, and cleansing, while enabling faculty expertise to scale, fostering dynamic student communities and self-service capabilities across the university.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Material UI", "TypeScript", "Figma", "AI", "Data Governance", "Knowledge Graphs"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-ax",
+      "title": "Advisor Experience (AX)",
+      "company": "Transamerica",
+      "year": "2019",
+      "description": "Led a team of 5 engineers and coordinated across 3 functional teams to deliver Transamerica’s Advisor Experience portal, the company’s flagship investment advisor platform. Developed the full-stack solution including a Node.js edge API, NestJS, Express, enterprise JWT authentication, Docker-based Jenkins CI/CD pipeline, and AWS deployment. Created an Amazon-style facet filtering across client accounts, enabling advisors to instantly search and navigate large datasets with precision, while ensuring a fast, reliable, and polished user experience.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["Angular", "Node.js", "NestJS", "Express", "AWS", "Docker", "NGRX", "CI/CD", "JWT"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-1",
+      "title": "Elite Athlete Health Insurance (EAHI)",
+      "company": "US Olympic Committee",
+      "year": "2015",
+      "description": "Built for the US Olympic Committee via Aspenware. Allows admins to select athletes to be offered and approved for Health Insurance. Each sport has different criteria and number of eligible athletes. Features include eligibility management, copy forward, waitlist, search and creation.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "Athlete Profile / Games Registration ",
+      "company": "US Olympic Committee",
+      "year": "2015",
+      "description": "Developed for the US Olympic Committee through Aspenware, architecting a dynamic Games Registration and athlete profile system. Enabled administrators to tailor registration questions by event, providing precise control over athlete data collection. Built in Angular with modular groups and service-driven configuration, featuring a standalone user profile independent of any event for maximum flexibility and reusability",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-3",
+      "title": "Direct Athlete Support (DAS) & Operation Gold",
+      "company": "US Olympic Committee",
+      "year": "2015",
+      "description": "Built for the US Olympic Committee via Aspenware. Allows administrators to create new pay periods and payments for athletes. Includes rolled up totals, eligibility management, copy forward, athlete lookup and creation.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Automapper", "TFS"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-4",
+      "title": "Find A Club",
+      "company": "US Olympic Committee",
+      "year": "2016",
+      "description": "Developed for the US Olympic Committee via Aspenware, the Find A Club module helps athletes locate sports clubs nationwide with ease. Built on Sitecore, the system provides an interactive U.S. map and searchable listings, empowering National Governing Bodies to connect athletes with local programs and expand participation in their sport. Designed for fast, intuitive access, making it simple for athletes to discover opportunities anywhere in the country.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Sitecore", "Bootstrap 3", "HTML5", ".Net", "WebApi 2"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "project-games-long-list",
+      "title": "Games Long List",
+      "company": "US Olympic Committee",
+      "description": "Redesigned and developed the 'Long List' feature for the US Olympic Committee via Aspenware, enabling administrators to add delegates and athletes to potential participant lists for events and games. Built a reusable AngularJS directive for searching existing delegates or creating new ones, assigning roles, and managing assignments efficiently. Implemented filtering, sorting, and pagination to streamline navigation and improve administrative productivity.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["AngularJS", "Twitter Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS", "Automapper"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+     {
+      "id": "project-jhu-bms",
+      "title": "Bed Management System",
+      "company": "Johns Hopkins University",
+      "year": "2004",
+      "description": "\"Developed the Johns Hopkins Bed Management System (BMS), a mission-critical platform used by hospital nurses on tablets and PCs to manage patient bed allocation, special needs, and care coordination. Designed a responsive, intuitive interface that streamlines real-time decision-making, supports operational efficiency, and ensures patient safety. Implemented robust data tracking and reporting features, enabling administrators to monitor occupancy, optimize resources, and maintain compliance across the entire hospital system.\"",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["Coldfusion", "SQL Server", "IPlanet directory Server"],
+      "featured": false,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "skills": [
+          { "name": "React", "level": 97, "featured": true },
+          { "name": "TypeScript", "level": 94, "featured": true  },
+          { "name": "HTML5 / CSS", "level": 92, "featured": true  },
+          { "name":  "Material MUI", "level": 92 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          { "name": "Java / Spring", "level": 82, "featured": true  },
+          { "name": ".Net / C# / WebApi 2", "level": 82 },
+          { "name": "Node.js", "level": 80  },
+          { "name": "REST", "level": 95, "featured": true  },
+          { "name": "JWT / Auth", "level": 85 }
+        ]
+      },
+      {
+        "name": "DevOps & Tools",
+        "skills": [
+          { "name": "Docker / Jenkins", "level": 80 },
+          { "name": "Firebase", "level": 75 },
+          { "name": "Git", "level": 89 },
+          { "name": "Figma (as a dev)", "level": 84 },
+          { "name": "Claude Code", "level": 85, "featured": true}
+        ]
+      },
+      {
+        "name": "Soft Skills",
+        "skills": [
+          { "name": "Team Leadership", "level": 96, "featured": true  },
+          { "name": "Mentoring", "level": 94, "featured": true  },
+          { "name": "Stakeholder Communication", "level": 90 },
+          { "name": "Agile / Scrum", "level": 88 },
+          { "name": "Cross-functional Collaboration", "level": 88 }
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-0",
+      "type": "work",
+      "company": "BurstIQ",
+      "role": "Team Lead / Principal UI Dev",
+      "period": "Oct 2024 — Present",
+      "location": "Denver, CO (Hybrid)",
+      "url": "https://burstiq.com",
+      "description": "Led a team of developers building intuitive and visually appealing Blockchain-based apps. Principal developer on the company's most critical projects.",
+      "impact": "Returned to BurstIQ to contribute to core platform development during a critical growth phase, initially focusing on backend systems within its blockchain-backed data platform. Built foundational capabilities in Java Spring, including a flexible Data Pipeline (field mapping, JavaScript transforms, rules), developing a deep, end-to-end understanding of how data moves through the system.\n\nTransitioned back to the frontend to lead architecture across multiple initiatives—taking over stalled offshore-built projects, re-architecting them for scalability, and driving them to production. Served as tech lead for a key EMS project coordinating distributed teams, and designed a modern admin platform enabling intuitive control over complex data workflows while improving overall system cohesion and delivery.",
+      "bullets": [ ],
+      "tech": ["React", "Angular", "TypeScript", "JWT", "Figma", "Blockchain"]
+    },
+    {
+      "id": "exp-solterra",
+      "type": "work",
+      "company": "Solterra Workshop",
+      "role": "Founder / Designer / Engineer",
+      "period": "2018 — Present",
+      "location": "Colorado (Remote)",
+      "url": "https://solterraworkshop.com/",
+      "description": "Founded and built Solterra Workshop, a creative studio blending craftsmanship, design, and technology to produce unique wood-based artwork and products. Designed and created original pieces inspired by outdoor exploration, translating natural forms and landscapes into precise, high-quality physical products.",
+      "impact": "Founded and operated a product-driven venture at the intersection of physical craftsmanship and digital engineering, building a scalable system for designing, producing, and delivering premium wood-based products. Architected end-to-end workflows that convert digital designs into precision-manufactured goods, emphasizing repeatability, quality, and efficiency. Designed and developed a modern web experience to support direct-to-consumer sales, brand storytelling, and customer engagement. Leveraged the business as an innovation lab to explore new models in productization, digital-to-physical pipelines, and tech-enabled creativity, applying a startup mindset to rapid iteration and continuous improvement.",
+      "bullets": [
+        "Designed and produced original wood art, including layered 3D animal designs and nature-inspired pieces",
+        "Developed repeatable processes for turning digital concepts into physical products with high precision",
+        "Integrated photography, hiking, and outdoor exploration into product ideation and storytelling",
+        "Built and refined a product-focused website experience to showcase and sell work",
+        "Explored new business models including limited releases, custom work, and digital extensions"
+      ],
+      "tech": ["Design", "Woodworking", "Product Development", "Branding", "E-commerce", "Photography"]
+    },
+    {
+      "id": "exp-1",
+      "type": "work",
+      "company": "BurstIQ",
+      "role": "Team Lead / Principal UI Dev",
+      "period": "Oct 2019 — Jul 2023",
+      "location": "Denver, CO (Hybrid)",
+      "url": "https://burstiq.com",
+      "description": "Led a team of developers building intuitive and visually appealing Blockchain-based apps. Principal developer on the company's most critical projects.",
+      "impact": "Spearheaded BurstIQ's front-end modernization by leading a full migration from Angular to React, unifying in-person, remote, and offshore contributors into a high-performing team — growing junior developers into trusted engineers and delivering the Admin UI that powers the core of a cutting-edge blockchain platform.",
+      "bullets": [
+        "Led a team of developers in creating intuitive and visually appealing Blockchain-based apps",
+        "Migrated company from Angular-based front ends to React",
+        "Oversaw in-person, remote, and off-shore team members",
+        "Mentored junior devs helping them grow their careers and become trusted productive team members",
+        "Developed React-based Admin UI for the company's Blockchain platform, including creation of new chains, user management, and visualization",
+        "Created Angular and React prototypes to demonstrate design concepts and gather user feedback",
+        "Implemented responsive design practices to ensure optimal user experience across all devices"
+      ],
+      "tech": ["React", "Angular", "TypeScript", "JWT", "Figma", "Blockchain"]
+    },
+    {
+      "id": "exp-2",
+      "type": "work",
+      "company": "Transamerica",
+      "role": "Manager Software Engineering",
+      "period": "Jul 2018 — Oct 2019",
+      "location": "Denver, CO (Hybrid)",
+      "url": "https://www.transamerica.com",
+      "description": "Team Lead and Principal Developer for Advisor Experience, the company's new portal for financial advisors to manage their book of business.",
+      "impact": "Took ownership of Transamerica's most visible advisor-facing product — orchestrating 5 direct reports across 3 functional teams to deliver a full-stack portal on time, complete with a bespoke Node.js edge API, Docker-based CI/CD pipeline to AWS, and enterprise JWT authentication.",
+      "bullets": [
+        "Supervised 5 direct reports across 3 different functional teams to ensure on-time delivery",
+        "Developed advanced Amazon-style facet filtering feature used throughout the app",
+        "Created edge API using Node.js, Express, and NestJS",
+        "Integrated JWT-based authentication with ISAM",
+        "Implemented Redux pattern using NGRX",
+        "Designed and developed Docker-based Jenkins CI/CD prototype with pipeline build, lint, test, and deploy to AWS S3"
+      ],
+      "tech": ["Angular", "Node.js", "NestJS", "Express", "JWT", "NGRX", "Docker", "Jenkins", "AWS S3"]
+    },
+    {
+      "id": "exp-3",
+      "type": "work",
+      "company": "Pinnacol Assurance",
+      "role": "Software Developer III / UI Team Lead",
+      "period": "Feb 2017 — Jun 2018",
+      "location": "Denver, CO (Hybrid)",
+      "url": "https://www.pinnacol.com",
+      "description": "Architected and served as Principal Developer for the new internal Angular component library and design system.",
+      "impact": "Transformed Pinnacol’s UI delivery by architecting a shared Angular component library and design system from scratch, while building Docker-based workflows integrated with Jenkins and Artifactory to streamline DevOps and continuous delivery. Cut deployment times from hours to seconds, rescued a behind-schedule project, delivered another ahead of schedule, and eliminated 15+ repos along with 40+ legacy builds of accumulated technical debt.",
+      "bullets": [
+        "Architected and led development of internal Angular component library (pn-library) and SCSS design system (pn-themes based on Foundation 6.x)",
+        "Created new build and deployment process using Jenkins, Artifactory, and Docker — reducing deployments from hours to seconds",
+        "Took over as Principal UI Dev for the behind-schedule Certificates of Insurance project (Angular 2)",
+        "Led Customer Onboarding project to completion ahead of schedule (Angular 4)",
+        "Prototyped and presented Progressive Web App (PWA) implementation using Angular 5 Service Worker",
+        "Reduced tech debt by archiving 15+ Git repos and removing 40+ legacy builds"
+      ],
+      "tech": ["Angular", "ES2015", "Foundation 6.x", "SCSS", "Jenkins", "Artifactory", "Docker", "Git"]
+    },
+    {
+      "id": "exp-4",
+      "type": "work",
+      "company": "Aspenware — (US Olympic Committee)",
+      "role": "Contractor",
+      "period": "Nov 2016 — Feb 2017",
+      "location": "Colorado Springs, CO (Hybrid)",
+      "url": "https://www.aspenware.com",
+      "description": "Contracted to split the existing AngularJS athlete portal away from the TeamUSA platform, removing dependencies on Sitecore and other TeamUSA components.",
+      "impact": "Executed a high-priority platform decoupling initiative for the US Olympic Committee — surgically separating the athlete portal from a monolithic Sitecore-based system and replacing it with a clean WebApi 2 back end, giving the USOC full ownership of their product roadmap.",
+      "bullets": [
+        "Split existing AngularJS athlete portal away from TeamUSA platform, removing Sitecore dependencies",
+        "Created a new WebApi 2 API using the repository pattern",
+        "Built new Angular app using MVC shell, Angular 1.3, and Bootstrap 3"
+      ],
+      "tech": ["JavaScript", "AngularJS", "LESS", "HTML5", ".Net", "WebApi 2", "TFS", "Sitecore"]
+    },
+    {
+      "id": "exp-5",
+      "type": "work",
+      "company": "Aspenware — (US Olympic Committee)",
+      "role": "Sr. Consultant",
+      "period": "Feb 2015 — Jun 2016",
+      "location": "Denver, CO",
+      "url": "https://www.aspenware.com",
+      "description": "Worked on multiple projects for the US Olympic Committee including athlete management, payment, registration, and insurance systems.",
+      "impact": "Built the digital backbone of the US Olympic Committee's athlete operations — delivering sport-specific health insurance eligibility, athlete payment management, nationwide club discovery, and Games registration systems that directly served America's Olympic athletes at scale.",
+      "bullets": [
+        "Architected Games Registration/Profile system allowing administrators to control questions shown to athletes per event",
+        "Designed and developed Direct Athlete Support (DAS) and Operation Gold payment management systems",
+        "Built Elite Athlete Health Insurance (EAHI) system with sport-specific eligibility criteria and waitlist",
+        "Developed Find A Club system with interactive US map allowing users to find sports clubs nationwide",
+        "Developed Long List feature for managing delegate/athlete nominations for events and games",
+        "Built drink-mixing robot using Arduino, Node.js, and Johnny-Five Robotics for an Aspenware IoT event"
+      ],
+      "tech": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS", "Automapper"]
+    },
+    {
+      "id": "exp-6",
+      "type": "work",
+      "company": "Aspenware (Inspirato)",
+      "role": "Contractor / Sr. Web Developer",
+      "period": "Oct 2014 — Jan 2015",
+      "location": "Denver, CO",
+      "url": "https://www.aspenware.com",
+      "description": "Contracted to develop new mobile features for Inspirato's web application.",
+      "impact": "Rapidly delivered two flagship mobile experiences for a luxury travel brand — building gesture-driven calendars, rich filtering, and custom sorting — extending a premium product to mobile users without disrupting the existing platform.",
+      "bullets": [
+        "Developed mobile version of Inspirato's \"Jaunt Now\" feature with filtering, sorting, custom calendar, and swipe gesture support",
+        "Developed mobile version of Inspirato's \"Jaunt 52\" feature with filtering, sorting, and custom calendar",
+        "Fixed numerous bugs across the existing mobile web application"
+      ],
+      "tech": ["HTML5", "CSS3", "SASS", "jQuery", "MVC4", ".Net 4.5", "Visual Studio 2013", "Subversion", "Jira"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "University of Central Florida",
+      "degree": "B.S., Management Information Systems",
+      "highlights": [
+        "Brother in Alpha Kappa Psi Professional Business Fraternity (Nu Chi)"
+      ]
+    }
+  ],
+  "interests": [
+    "Woodworking: I have been a woodworker my whole adult life. I really like making stuff and am very handy. I have made tables, signs, cutting boards, pens and much more.",
+    "Corvettes: Since I was a little boy, I have always loved Corvettes. I have actually owned 3 so far and am just starting to look for my next one.",
+    "I am a huge fan of NFL and College Football.",
+    "I also enjoy getting out into the Colorado backcountry, mostly hiking."
+  ],
+  "quotes": [
+    {
+      "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+      "author": "Martin Fowler"
+    },
+    {
+      "text": "Teaching peers is one of the best ways to develop mastery.",
+      "author": "Jeff Atwood, Stackoverflow"
+    },
+    {
+      "text": "The trick isn't adding stuff, it is taking it away.",
+      "author": "Mark Zuckerberg, Facebook"
+    }
+  ],
+  "contact": {
+    "headline": "Get In Touch",
+    "subtext": "I'm currently open to new opportunities. Whether you have a question, a project in mind, or just want to say hi — my inbox is always open!",
+    "ctaLabel": "Say Hello"
+  }
+}

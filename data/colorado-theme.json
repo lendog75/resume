@@ -1,0 +1,39 @@
+{
+  "colors": {
+    "bg": "#1c1a15",
+    "bgSurface": "#252218",
+    "bgCard": "#2e2a1e",
+    "accent": "#c8872a",
+    "accentMuted": "rgba(200,135,42,0.12)",
+    "textPrimary": "white",
+    "textSecondary": "#dcd7cd",
+    "textHeading": "#f4edde",
+    "border": "#3a3428",
+    "navBg": "rgba(28,26,21,0.88)"
+  },
+  "lightColors": {
+    "bg": "#f5f0e8",
+    "bgSurface": "#fffdf7",
+    "bgCard": "#ece6d8",
+    "accent": "#8b5a1a",
+    "accentMuted": "rgba(139,90,26,0.12)",
+    "textPrimary": "#2c2416",
+    "textSecondary": "#6b5c42",
+    "textHeading": "#1a1208",
+    "border": "#d4c8b0",
+    "navBg": "rgba(245,240,232,0.88)"
+  },
+  "fonts": {
+    "sans": "Inter",
+    "mono": "Fira Code"
+  },
+  "radius": {
+    "card": "4px",
+    "button": "4px"
+  },
+  "animation": {
+    "skillBarDuration": "1.2s",
+    "entranceDuration": "0.6s",
+    "entranceDelay": "0.1s"
+  }
+}

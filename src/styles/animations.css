@@ -1,0 +1,83 @@
+/* ─── Entrance Animations ───────────────────────────────────────────────── */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ─── Skill Bar ─────────────────────────────────────────────────────────── */
+
+@keyframes barFill {
+  from { width: 0%; }
+  to   { width: var(--bar-width, 0%); }
+}
+
+/* ─── Pulse ─────────────────────────────────────────────────────────────── */
+
+@keyframes pulse-accent {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* ─── Utility Classes ───────────────────────────────────────────────────── */
+
+.animate-fade-in-up {
+  animation: fadeInUp var(--animation-entrance, 0.6s) ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--animation-entrance, 0.6s) ease forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft var(--animation-entrance, 0.6s) ease forwards;
+}
+
+/* Elements start invisible until JS adds the class */
+.animate-on-view {
+  opacity: 0;
+}
+
+.animate-on-view.in-view {
+  animation: fadeInUp var(--animation-entrance, 0.6s) ease forwards;
+}
+
+/* Staggered children */
+.animate-on-view.in-view:nth-child(1) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 1); }
+.animate-on-view.in-view:nth-child(2) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 2); }
+.animate-on-view.in-view:nth-child(3) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 3); }
+.animate-on-view.in-view:nth-child(4) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 4); }
+.animate-on-view.in-view:nth-child(5) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 5); }
+.animate-on-view.in-view:nth-child(6) { animation-delay: calc(var(--animation-entrance-delay, 0.1s) * 6); }
+
+/* Skill bar fill animation */
+.skill-bar-fill {
+  width: 0%;
+  transition: width var(--animation-skill-bar, 1.2s) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-bar-fill.animate {
+  width: var(--bar-width, 0%);
+}
