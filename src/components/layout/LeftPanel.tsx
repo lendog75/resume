@@ -38,15 +38,16 @@ export function LeftPanel({ nav }: { nav: NavItem[] }) {
         {(meta.resumePdf || meta.resumeWord) && (
           <div className="flex flex-col gap-2 mt-8 w-fit">
             {meta.resumePdf && (
-              <Button href={meta.resumePdf} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+              <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
                 Download Resume as PDF
               </Button>
             )}
             {meta.resumeWord && (
-              <Button href={meta.resumeWord} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+              <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
                 Download Resume as Word
               </Button>
             )}
+            <p className="text-xs text-muted-foreground">Coming soon</p>
           </div>
         )}
 

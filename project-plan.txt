@@ -1,0 +1,197 @@
+ Here is Claude's plan:
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Plan: Next.js + TailwindCSS Resume Portfolio App
+
+ Context
+
+ Building a JSON-driven resume/portfolio web app in /Applications/git/Resume2026 (currently empty) that visually matches BrittanyChiang.com. The app should be fully
+ configurable via data.json and theme.json, deployed to Vercel, with a thorough README for senior React devs new to Next.js.
+
+ ---
+ Phase 1: Bootstrap
+
+ cd /Applications/git/Resume2026
+ npx create-next-app@latest . \
+   --typescript --tailwind --eslint --app --src-dir \
+   --import-alias "@/*" --no-turbopack
+ npm install next-themes lucide-react clsx tailwind-merge server-only
+
+ ---
+ Phase 2: File Structure to Create
+
+ /Applications/git/Resume2026/
+ ├── README.md
+ ├── .env.local                          # DATA_SOURCE env var
+ ├── .env.example
+ ├── data/
+ │   ├── data.json                       # All resume content
+ │   └── theme.json                      # Color tokens + font/radius/animation
+ ├── public/
+ │   ├── resume.pdf                      # Placeholder
+ │   └── images/
+ │       ├── profile.jpg
+ │       └── projects/project1.jpg
+ └── src/
+     ├── app/
+     │   ├── layout.tsx                  # Root: fonts, ThemeProvider, CSS vars
+     │   ├── page.tsx                    # Async server component, fetches data
+     │   ├── globals.css                 # TailwindCSS v4 @theme + :root vars
+     │   └── api/
+     │       ├── data/route.ts           # GET /api/data
+     │       └── contact/route.ts        # POST /api/contact
+     ├── components/
+     │   ├── layout/
+     │   │   ├── Header.tsx              # Sticky nav, scroll opacity, hamburger
+     │   │   ├── MobileMenu.tsx          # Slide-in drawer
+     │   │   └── Footer.tsx
+     │   ├── sections/
+     │   │   ├── Hero.tsx
+     │   │   ├── About.tsx
+     │   │   ├── Projects.tsx
+     │   │   ├── Skills.tsx
+     │   │   ├── Experience.tsx          # Tabbed: Work | Education
+     │   │   └── Contact.tsx
+     │   ├── ui/
+     │   │   ├── Button.tsx
+     │   │   ├── SectionHeading.tsx      # "01. About" numbered style
+     │   │   ├── NavLink.tsx
+     │   │   ├── SocialIcon.tsx
+     │   │   ├── ThemeToggle.tsx
+     │   │   ├── ProjectCard.tsx
+     │   │   ├── SkillBar.tsx
+     │   │   ├── TimelineItem.tsx
+     │   │   └── ContactForm.tsx
+     │   └── providers/
+     │       ├── ThemeProvider.tsx       # next-themes wrapper
+     │       └── DataProvider.tsx        # React context for resume data
+     ├── hooks/
+     │   ├── useScrollSpy.ts             # IntersectionObserver → active section
+     │   ├── useAnimateOnView.ts         # Trigger CSS entrance on viewport entry
+     │   └── useTheme.ts
+     ├── lib/
+     │   ├── types.ts                    # All TS interfaces (define FIRST)
+     │   ├── loadData.ts                 # Server-only: local file or fetch URL
+     │   └── loadTheme.ts                # Server-only: reads theme.json
+     └── styles/
+         └── animations.css              # fadeInUp, barFill, pulse keyframes
+
+ ---
+ Phase 3: Data Files
+
+ data/data.json key fields
+
+ {
+   "meta": { "siteTitle", "description", "url", "resumePdf" },
+   "personal": { "name", "tagline", "subTagline", "location", "email",
+                 "availableForWork", "profileImage", "bio[]", "social{}" },
+   "nav": [{ "label", "href" }],
+   "about": { "headline", "body[]", "quickFacts[]" },
+   "projects": [{ "id", "title", "description", "image", "tags[]",
+                  "featured", "links.github", "links.live" }],
+   "skills": { "categories": [{ "name", "skills": [{ "name", "level" }] }] },
+   "experience": [{ "id", "type:work", "company", "role", "period",
+                    "location", "description", "bullets[]", "tech[]" }],
+   "education": [{ "id", "institution", "degree", "period", "gpa", "highlights[]" }],
+   "contact": { "headline", "subtext", "ctaLabel" }
+ }
+
+ data/theme.json key fields
+
+ {
+   "colors": { "bg":"#0a192f", "bgSurface":"#112240", "bgCard":"#1d3461",
+               "accent":"#64ffda", "textPrimary":"#ccd6f6",
+               "textSecondary":"#8892b0", "border":"#233554" },
+   "fonts": { "sans":"Inter", "mono":"Fira Code" },
+   "radius": { "card":"4px", "button":"4px" },
+   "animation": { "skillBarDuration":"1.2s", "entranceDuration":"0.6s" }
+ }
+
+ ---
+ Phase 4: Key Architectural Decisions
+
+ Theming (CSS Custom Properties + TailwindCSS v4)
+
+ 1. loadTheme.ts reads theme.json server-side
+ 2. Values injected as CSS custom properties in layout.tsx via <style> tag
+ 3. TailwindCSS v4 @theme block maps vars to utility names (text-accent, bg-surface)
+ 4. Dark/light mode via next-themes with attribute="class" — swaps CSS var values in .dark {}
+
+ Data Loading
+
+ - DATA_SOURCE env var controls source: empty = local data/data.json, or https:// URL
+ - loadData.ts marked import "server-only" — called in async page.tsx Server Component
+ - Data passed to DataProvider context; all components read via useData() hook
+
+ Component Boundary Strategy
+
+ - page.tsx = async Server Component (fetches data, no useEffect)
+ - All section components = Client Components ("use client") for animations/interactivity
+ - Keep "use client" as deep as possible to maximize server rendering
+
+ Scroll Spy
+
+ - useScrollSpy.ts uses IntersectionObserver (threshold 0.6) watching section id attributes
+ - Active section stored in context, read by NavLink for accent + underline highlight
+
+ Skill Bar Animation
+
+ - useAnimateOnView.ts wraps IntersectionObserver → adds animate-in class on entry
+ - Bar fill is a CSS transition on --bar-width custom property (no JS animation)
+
+ ---
+ Phase 5: Implementation Order
+
+ 1. Bootstrap — create-next-app + install deps
+ 2. Data files — data.json, theme.json, .env.local
+ 3. Types — src/lib/types.ts (all interfaces)
+ 4. Server lib — loadData.ts, loadTheme.ts
+ 5. Globals — globals.css with TailwindCSS v4 @theme block + :root vars + animations.css
+ 6. Layout — layout.tsx (fonts, ThemeProvider, style injection)
+ 7. Providers — ThemeProvider.tsx, DataProvider.tsx
+ 8. UI primitives — Button, SectionHeading, NavLink, SocialIcon, ThemeToggle
+ 9. Section-specific UI — ProjectCard, SkillBar, TimelineItem, ContactForm
+ 10. Hooks — useScrollSpy, useAnimateOnView, useTheme
+ 11. Sections — Header → MobileMenu → Hero → About → Projects → Skills → Experience → Contact → Footer
+ 12. page.tsx — wire everything together
+ 13. API routes — /api/data, /api/contact
+ 14. Polish — responsive breakpoints, hover states, entrance animations
+ 15. README.md — full docs
+
+ ---
+ Phase 6: README Sections
+
+ 1. Project Overview + screenshots
+ 2. Prerequisites (Node 18+)
+ 3. Installation + Running Locally
+ 4. Folder Structure (annotated)
+ 5. Data Configuration (data.json field reference)
+ 6. Switching to GitHub URL (DATA_SOURCE env var)
+ 7. Color/Theming (theme.json + CSS var system)
+ 8. Dark/Light Mode (next-themes explanation)
+ 9. Contact Backend options (Formspree, Resend, console.log)
+ 10. Deployment on Vercel (env vars, vercel deploy)
+ 11. Customization Tips
+ 12. Next.js Concepts for React Devs — Server vs Client Components, async components, suppressHydrationWarning, next/image, next/font, Route Handlers vs pages/api
+
+ ---
+ Verification
+
+ 1. npm run dev → app loads at http://localhost:3000
+ 2. All sections render with data from data.json
+ 3. Edit a field in data.json → hot reload reflects the change
+ 4. Toggle dark/light mode → colors swap without flash
+ 5. Resize to mobile → hamburger menu appears, drawer works
+ 6. Scroll down → nav highlights active section
+ 7. Skill section enters viewport → bars animate in
+ 8. Contact form submits → shows success/error state
+ 9. Set DATA_SOURCE=https://... in .env.local → data loads from URL
+ 10. npm run build && npm start → production build works
+ 11. Deploy to Vercel → confirm env vars work in production
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+ Claude has written up a plan and is ready to execute. Would you like to proceed?
+
+ ❯ 1. Yes, clear context (15% used) and auto-accept edits
+   2. Yes, auto-accept edits
+   3. Yes, manually approve edits
+   4. Type here to tell Claude what to change
