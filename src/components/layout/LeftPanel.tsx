@@ -35,21 +35,29 @@ export function LeftPanel({ nav }: { nav: NavItem[] }) {
         </p>
 
         {/* Resume downloads */}
-        {(meta.resumePdf || meta.resumeWord) && (
-          <div className="flex flex-col gap-2 mt-8 w-fit">
-            {meta.resumePdf && (
+        <div className="flex flex-col gap-2 mt-8 w-fit">
+          {!meta.resumePdf && !meta.resumeWord ? (
+            <>
               <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
-                Download Resume as PDF
+                Download Resume
               </Button>
-            )}
-            {meta.resumeWord && (
-              <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
-                Download Resume as Word
-              </Button>
-            )}
-            <p className="text-xs text-muted-foreground">Coming soon</p>
-          </div>
-        )}
+              <p className="text-xs text-[var(--color-text-secondary)]">Coming soon</p>
+            </>
+          ) : (
+            <>
+              {meta.resumePdf && (
+                <Button href={meta.resumePdf} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+                  Download Resume as PDF
+                </Button>
+              )}
+              {meta.resumeWord && (
+                <Button href={meta.resumeWord} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+                  Download Resume as Word
+                </Button>
+              )}
+            </>
+          )}
+        </div>
 
         {/* Nav — desktop only */}
         <nav className="hidden lg:flex flex-col gap-0 mt-8" aria-label="Page sections">
