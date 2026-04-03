@@ -80,20 +80,6 @@
       }
     },
     {
-      "id": "godzilla-ui",
-      "title": "BIQ Platform Admin Tool v2",
-      "company": "BurstIQ",
-      "year": "2022",
-      "description": "Architected and developed a React and Material UI admin platform for BurstIQ’s blockchain ecosystem, enabling administrators to precisely configure, monitor, and explore complex blockchain graphs. Designed a robust dictionary editor for defining chains with nested attribute trees, indexes, and metadata, alongside comprehensive tools for managing consent contracts, CC receipts, jobs, user groups, and platform settings. Implemented an interactive graph visualization module using a graph API and Tiny Query Language (TQL), providing real-time insights into blockchain relationships and accelerating data-driven decision-making.",
-      "image": "/images/projects/project1.jpg",
-      "tags": ["React", "Material UI", "TypeScript", "Figma"],
-      "featured": true,
-      "links": {
-        "github": null,
-        "live": null
-      }
-    },
-    {
       "id": "LifeTrek",
       "title": "Next-Gen Student-Centered Data Ecosystem",
       "company": "BurstIQ/Maryville Univ",
@@ -101,6 +87,20 @@
       "description": "Directed development of Maryville University's LifeTrek platform, a next-generation student-centered data ecosystem for nursing programs. Built scalable knowledge graphs to unify administrative and student data, ensuring consistency, lineage tracking, and auditable data history. Designed personalized learner pathways that empower students to manage their skills, achievements, and learning journeys, leveraging generative AI for immersive, interactive experiences. Delivered automation for data governance, transformation, and cleansing, while enabling faculty expertise to scale, fostering dynamic student communities and self-service capabilities across the university.",
       "image": "/images/projects/project1.jpg",
       "tags": ["React", "Material UI", "TypeScript", "Figma", "AI", "Data Governance", "Knowledge Graphs"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "godzilla-ui",
+      "title": "BIQ Platform Admin Tool v2",
+      "company": "BurstIQ",
+      "year": "2022",
+      "description": "Architected and developed a React and Material UI admin platform for BurstIQ’s blockchain ecosystem, enabling administrators to precisely configure, monitor, and explore complex blockchain graphs. Designed a robust dictionary editor for defining chains with nested attribute trees, indexes, and metadata, alongside comprehensive tools for managing consent contracts, CC receipts, jobs, user groups, and platform settings. Implemented an interactive graph visualization module using a graph API and Tiny Query Language (TQL), providing real-time insights into blockchain relationships and accelerating data-driven decision-making.",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Material UI", "TypeScript", "Figma"],
       "featured": true,
       "links": {
         "github": null,
