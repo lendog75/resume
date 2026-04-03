@@ -52,6 +52,20 @@
   },
   "projects": [
     {
+      "id": "solterra-workshop-v2",
+      "title": "Solterra Workshop — UI and Storefront",
+      "description": "A custom storefront built on React, TypeScript, and Material UI — currently using local JSON as a lightweight data layer, with Firebase Firestore, Cloud Storage, and Auth planned as the backend matures.\n\nCheckout is implemented server-side via Firebase Cloud Functions using a modular architecture designed to support multiple payment processors — keeping PCI scope at zero and client-side price tampering off the table from day one. The filterable product catalog, cart, and component-level design system are all custom-built — no off-the-shelf UI kits or platform shortcuts.\n\nBuilt in phases: catalog and UI foundation complete, with auth, order history, and admin tooling on the roadmap. Open-sourcing is planned once product data is de-identified — a clean real-world reference implementation for small product businesses.",
+      "company": "Solterra Workshop",
+      "year": "2026",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Typescript","Material UI", "AI-assisted Development", "UX", "E-Commerce"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
       "id": "biq-admin-v3",
       "title": "BIQ Platform Admin Tool v3",
       "company": "BurstIQ",

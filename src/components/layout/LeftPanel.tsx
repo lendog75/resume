@@ -20,7 +20,8 @@ export function LeftPanel({ nav }: { nav: NavItem[] }) {
   const currentRole = experience[0]?.role ?? "Software Engineer";
 
   return (
-    <aside className="flex flex-col justify-between h-full">
+    <aside className="flex flex-col h-full">
+      {/* Name / role / tagline + desktop nav */}
       <div>
         <a href="#" className="block group">
           <h1 className="text-4xl font-bold text-[var(--color-text-heading)] mb-3 group-hover:text-[var(--color-accent)] transition-colors">
@@ -33,31 +34,6 @@ export function LeftPanel({ nav }: { nav: NavItem[] }) {
         <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed max-w-xs">
           {personal.subTagline}
         </p>
-
-        {/* Resume downloads */}
-        <div className="flex flex-col gap-2 mt-8 w-fit">
-          {!meta.resumePdf && !meta.resumeWord ? (
-            <>
-              <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
-                Download Resume
-              </Button>
-              <p className="text-xs text-[var(--color-text-secondary)]">Coming soon</p>
-            </>
-          ) : (
-            <>
-              {meta.resumePdf && (
-                <Button href={meta.resumePdf} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
-                  Download Resume as PDF
-                </Button>
-              )}
-              {meta.resumeWord && (
-                <Button href={meta.resumeWord} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
-                  Download Resume as Word
-                </Button>
-              )}
-            </>
-          )}
-        </div>
 
         {/* Nav — desktop only */}
         <nav className="hidden lg:flex flex-col gap-0 mt-8" aria-label="Page sections">
@@ -90,12 +66,37 @@ export function LeftPanel({ nav }: { nav: NavItem[] }) {
         </nav>
       </div>
 
-      {/* Socials + theme toggle */}
-      <div className="flex items-center gap-5">
+      {/* Socials + theme toggle — order-2 on mobile (above resume), mt-auto pushes to bottom on desktop */}
+      <div className="flex items-center gap-5 mt-8 order-2 lg:order-none lg:mt-auto">
         {socials.map(([platform, url]) => (
           <SocialIcon key={platform} platform={platform} url={url} />
         ))}
         <ThemeToggle />
+      </div>
+
+      {/* Resume downloads — order-3 on mobile (below socials) */}
+      <div className="flex flex-col gap-2 mt-8 w-fit order-3 lg:order-none">
+        {!meta.resumePdf && !meta.resumeWord ? (
+          <>
+            <Button disabled variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+              Download Resume
+            </Button>
+            <p className="text-xs text-[var(--color-text-secondary)]">Coming soon</p>
+          </>
+        ) : (
+          <>
+            {meta.resumePdf && (
+              <Button href={meta.resumePdf} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+                Download Resume as PDF
+              </Button>
+            )}
+            {meta.resumeWord && (
+              <Button href={meta.resumeWord} download variant="outline" size="sm" className="w-full text-xs px-3 py-1.5">
+                Download Resume as Word
+              </Button>
+            )}
+          </>
+        )}
       </div>
     </aside>
   );
