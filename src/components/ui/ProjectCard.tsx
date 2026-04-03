@@ -5,6 +5,19 @@ import Image from "next/image";
 import type { Project } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
+function renderDescription(text: string, className: string) {
+  return (
+    <p className={className}>
+      {text.split("\n").map((line, i, arr) => (
+        <span key={i}>
+          {line}
+          {i < arr.length - 1 && <br />}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 interface ProjectCardProps {
   project: Project;
   featured?: boolean;
@@ -43,12 +56,6 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
                   <Github size={18} />
                 </a>
               )}
-              {project.links.live && (
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer" aria-label="Live site"
-                  className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors">
-                  <ExternalLink size={18} />
-                </a>
-              )}
             </div>
           </div>
 
@@ -66,9 +73,7 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
           </div>
 
           {/* Description */}
-          <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
-            {project.description}
-          </p>
+          {renderDescription(project.description, "text-[var(--color-text-secondary)] text-sm leading-relaxed")}
 
           {/* Tags */}
           <ul className="flex flex-wrap gap-2">
@@ -78,6 +83,19 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
               </li>
             ))}
           </ul>
+
+          {/* Live link — prominent CTA */}
+          {project.links.live && (
+            <a
+              href={project.links.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-mono text-sm text-[var(--color-accent)] border border-[var(--color-accent)] px-4 py-2 rounded-[var(--radius-button)] hover:bg-[var(--color-accent-muted)] transition-colors w-fit"
+            >
+              <ExternalLink size={14} />
+              Visit Site
+            </a>
+          )}
         </div>
       </div>
     );
@@ -133,9 +151,7 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
             {project.company}
           </p>
         )}
-        <p className="text-[var(--color-text-secondary)] text-xs leading-relaxed mb-2">
-          {project.description}
-        </p>
+        {renderDescription(project.description, "text-[var(--color-text-secondary)] text-xs leading-relaxed mb-2")}
         <ul className="flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <li key={tag} className="font-mono text-xs text-[var(--color-accent)] bg-[var(--color-accent-muted)] px-2 py-0.5 rounded-full">

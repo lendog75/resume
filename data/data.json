@@ -52,6 +52,20 @@
   },
   "projects": [
     {
+      "id": "solterra-workshop-v2",
+      "title": "Solterra Workshop — UI and Storefront",
+      "description": "(In Progress)A custom storefront built on React, TypeScript, and Material UI — currently using local JSON as a lightweight data layer, with Firebase Firestore, Cloud Storage, and Auth planned as the backend matures.\n\nCheckout is implemented server-side via Firebase Cloud Functions using a modular architecture designed to support multiple payment processors — keeping PCI scope at zero and client-side price tampering off the table from day one. The filterable product catalog, cart, and component-level design system are all custom-built — no off-the-shelf UI kits or platform shortcuts.\n\nBuilt in phases: catalog and UI foundation complete, with auth, order history, and admin tooling on the roadmap. Open-sourcing is planned once product data is de-identified — a clean real-world reference implementation for small product businesses.",
+      "company": "Solterra Workshop",
+      "year": "2026",
+      "image": "/images/projects/project1.jpg",
+      "tags": ["React", "Typescript","Material UI", "AI-assisted Development", "UX", "E-Commerce"],
+      "featured": true,
+      "links": {
+        "github": null,
+        "live": "https://solterra-workshop.web.app/"
+      }
+    },
+    {
       "id": "biq-admin-v3",
       "title": "BIQ Platform Admin Tool v3",
       "company": "BurstIQ",
@@ -196,40 +210,41 @@
       {
         "name": "Frontend",
         "skills": [
-          { "name": "React", "level": 97, "featured": true },
-          { "name": "TypeScript", "level": 94, "featured": true  },
-          { "name": "HTML5 / CSS", "level": 92, "featured": true  },
-          { "name":  "Material MUI", "level": 92 }
+          { "name": "React", "level": 95, "featured": true },
+          { "name": "TypeScript", "level": 90, "featured": true },
+          { "name": "HTML5 / CSS", "level": 88, "featured": true },
+          { "name": "Material UI", "level": 85 },
+          { "name": "NextJs", "level": 82 }
         ]
       },
       {
         "name": "Backend",
         "skills": [
-          { "name": "Java / Spring", "level": 82, "featured": true  },
-          { "name": ".Net / C# / WebApi 2", "level": 82 },
-          { "name": "Node.js", "level": 80  },
-          { "name": "REST", "level": 95, "featured": true  },
-          { "name": "JWT / Auth", "level": 85 }
+          { "name": "Java / Spring", "level": 82, "featured": true },
+          { "name": ".Net / C# / WebApi 2", "level": 80 },
+          { "name": "Node.js", "level": 78 },
+          { "name": "REST", "level": 88, "featured": true },
+          { "name": "JWT / Auth", "level": 83 }
         ]
       },
       {
         "name": "DevOps & Tools",
         "skills": [
-          { "name": "Docker / Jenkins", "level": 80 },
+          { "name": "Docker / Jenkins", "level": 78 },
           { "name": "Firebase", "level": 75 },
-          { "name": "Git", "level": 89 },
-          { "name": "Figma (as a dev)", "level": 84 },
-          { "name": "Claude Code", "level": 85, "featured": true}
+          { "name": "Git", "level": 88 },
+          { "name": "Figma (as a dev)", "level": 82 },
+          { "name": "Claude Code", "level": 92, "featured": true }
         ]
       },
       {
         "name": "Soft Skills",
         "skills": [
-          { "name": "Team Leadership", "level": 96, "featured": true  },
-          { "name": "Mentoring", "level": 94, "featured": true  },
-          { "name": "Stakeholder Communication", "level": 90 },
-          { "name": "Agile / Scrum", "level": 88 },
-          { "name": "Cross-functional Collaboration", "level": 88 }
+          { "name": "Team Leadership", "level": 88, "featured": true },
+          { "name": "Mentoring", "level": 87, "featured": true },
+          { "name": "Stakeholder Communication", "level": 85 },
+          { "name": "Agile / Scrum", "level": 84 },
+          { "name": "Cross-functional Collaboration", "level": 84 }
         ]
       }
     ]
