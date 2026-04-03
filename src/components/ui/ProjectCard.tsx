@@ -56,12 +56,6 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
                   <Github size={18} />
                 </a>
               )}
-              {project.links.live && (
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer" aria-label="Live site"
-                  className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors">
-                  <ExternalLink size={18} />
-                </a>
-              )}
             </div>
           </div>
 
@@ -89,6 +83,19 @@ export function ProjectCard({ project, featured, index = 0, className }: Project
               </li>
             ))}
           </ul>
+
+          {/* Live link — prominent CTA */}
+          {project.links.live && (
+            <a
+              href={project.links.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-mono text-sm text-[var(--color-accent)] border border-[var(--color-accent)] px-4 py-2 rounded-[var(--radius-button)] hover:bg-[var(--color-accent-muted)] transition-colors w-fit"
+            >
+              <ExternalLink size={14} />
+              Visit Site
+            </a>
+          )}
         </div>
       </div>
     );
