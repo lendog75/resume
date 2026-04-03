@@ -59,7 +59,7 @@
       "year": "2026",
       "image": "/images/projects/project1.jpg",
       "tags": ["React", "Typescript","Material UI", "AI-assisted Development", "UX", "E-Commerce"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": "https://solterra-workshop.web.app/"
@@ -73,7 +73,7 @@
       "description": "Rebuilt the BIQ Admin Tool as Aegis UI with React and Material UI, creating a modern, intuitive interface that mirrored the previous version while running on a new server architecture. Leveraged AI-assisted development to exponentially accelerate UI creation while maintaining coding standards and a consistent style. Simplified workflows and the ownership model to help new users onboard faster, while preserving core blockchain management features including chain configuration, consent management, and node visualization.",
       "image": "/images/projects/project1.jpg",
       "tags": ["React", "Material UI", "AI-assisted Development", "Blockchain", "UX", "Admin Tool"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": null
@@ -87,7 +87,7 @@
       "description": "Directed development of Maryville University's LifeTrek platform, a next-generation student-centered data ecosystem for nursing programs. Built scalable knowledge graphs to unify administrative and student data, ensuring consistency, lineage tracking, and auditable data history. Designed personalized learner pathways that empower students to manage their skills, achievements, and learning journeys, leveraging generative AI for immersive, interactive experiences. Delivered automation for data governance, transformation, and cleansing, while enabling faculty expertise to scale, fostering dynamic student communities and self-service capabilities across the university.",
       "image": "/images/projects/project1.jpg",
       "tags": ["React", "Material UI", "TypeScript", "Figma", "AI", "Data Governance", "Knowledge Graphs"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": null
@@ -101,7 +101,7 @@
       "description": "Architected and developed a React and Material UI admin platform for BurstIQ’s blockchain ecosystem, enabling administrators to precisely configure, monitor, and explore complex blockchain graphs. Designed a robust dictionary editor for defining chains with nested attribute trees, indexes, and metadata, alongside comprehensive tools for managing consent contracts, CC receipts, jobs, user groups, and platform settings. Implemented an interactive graph visualization module using a graph API and Tiny Query Language (TQL), providing real-time insights into blockchain relationships and accelerating data-driven decision-making.",
       "image": "/images/projects/project1.jpg",
       "tags": ["React", "Material UI", "TypeScript", "Figma"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": null
@@ -115,7 +115,7 @@
       "description": "Led a team of 5 engineers and coordinated across 3 functional teams to deliver Transamerica’s Advisor Experience portal, the company’s flagship investment advisor platform. Developed the full-stack solution including a Node.js edge API, NestJS, Express, enterprise JWT authentication, Docker-based Jenkins CI/CD pipeline, and AWS deployment. Created an Amazon-style facet filtering across client accounts, enabling advisors to instantly search and navigate large datasets with precision, while ensuring a fast, reliable, and polished user experience.",
       "image": "/images/projects/project1.jpg",
       "tags": ["Angular", "Node.js", "NestJS", "Express", "AWS", "Docker", "NGRX", "CI/CD", "JWT"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": null
@@ -129,7 +129,7 @@
       "description": "Built for the US Olympic Committee via Aspenware. Allows admins to select athletes to be offered and approved for Health Insurance. Each sport has different criteria and number of eligible athletes. Features include eligibility management, copy forward, waitlist, search and creation.",
       "image": "/images/projects/project1.jpg",
       "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
-      "featured": false,
+      "status": "Active",
       "links": {
         "github": null,
         "live": null
@@ -143,7 +143,7 @@
       "description": "Developed for the US Olympic Committee through Aspenware, architecting a dynamic Games Registration and athlete profile system. Enabled administrators to tailor registration questions by event, providing precise control over athlete data collection. Built in Angular with modular groups and service-driven configuration, featuring a standalone user profile independent of any event for maximum flexibility and reusability",
       "image": "/images/projects/project1.jpg",
       "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS"],
-      "featured": true,
+      "status": "Featured Project",
       "links": {
         "github": null,
         "live": null
@@ -157,7 +157,7 @@
       "description": "Built for the US Olympic Committee via Aspenware. Allows administrators to create new pay periods and payments for athletes. Includes rolled up totals, eligibility management, copy forward, athlete lookup and creation.",
       "image": "/images/projects/project1.jpg",
       "tags": ["AngularJS", "Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Automapper", "TFS"],
-      "featured": false,
+      "status": "Archived",
       "links": {
         "github": null,
         "live": null
@@ -171,7 +171,7 @@
       "description": "Developed for the US Olympic Committee via Aspenware, the Find A Club module helps athletes locate sports clubs nationwide with ease. Built on Sitecore, the system provides an interactive U.S. map and searchable listings, empowering National Governing Bodies to connect athletes with local programs and expand participation in their sport. Designed for fast, intuitive access, making it simple for athletes to discover opportunities anywhere in the country.",
       "image": "/images/projects/project1.jpg",
       "tags": ["AngularJS", "Sitecore", "Bootstrap 3", "HTML5", ".Net", "WebApi 2"],
-      "featured": false,
+      "status": "Archived",
       "links": {
         "github": null,
         "live": null
@@ -184,7 +184,7 @@
       "description": "Redesigned and developed the 'Long List' feature for the US Olympic Committee via Aspenware, enabling administrators to add delegates and athletes to potential participant lists for events and games. Built a reusable AngularJS directive for searching existing delegates or creating new ones, assigning roles, and managing assignments efficiently. Implemented filtering, sorting, and pagination to streamline navigation and improve administrative productivity.",
       "image": "/images/projects/project1.jpg",
       "tags": ["AngularJS", "Twitter Bootstrap 3", "HTML5", ".Net 4.5", "WebApi 2", "Sitecore", "TFS", "Automapper"],
-      "featured": false,
+      "status": "Active",
       "links": {
         "github": null,
         "live": null
@@ -198,7 +198,7 @@
       "description": "\"Developed the Johns Hopkins Bed Management System (BMS), a mission-critical platform used by hospital nurses on tablets and PCs to manage patient bed allocation, special needs, and care coordination. Designed a responsive, intuitive interface that streamlines real-time decision-making, supports operational efficiency, and ensures patient safety. Implemented robust data tracking and reporting features, enabling administrators to monitor occupancy, optimize resources, and maintain compliance across the entire hospital system.\"",
       "image": "/images/projects/project1.jpg",
       "tags": ["Coldfusion", "SQL Server", "IPlanet directory Server"],
-      "featured": false,
+      "status": "Active",
       "links": {
         "github": null,
         "live": null

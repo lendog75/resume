@@ -64,7 +64,7 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  featured: boolean;
+  status: "Featured Project" | "Archived" | "Active";
   links: ProjectLinks;
 }
 
