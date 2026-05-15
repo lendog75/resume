@@ -7,7 +7,7 @@ export function Footer({ personal }: { personal: Personal }) {
         href={`mailto:${personal.email}`}
         className="font-mono text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors"
       >
-        Designed &amp; Built by {personal.name}
+        Designed &amp; Built by {personal.name} (2026)
       </a>
     </footer>
   );
